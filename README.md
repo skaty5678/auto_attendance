@@ -1,6 +1,6 @@
 # Face Recognition Attendance System using OpenCV and Face_Recognition Library
 
-This program recognizes faces from live video feed and marks attendance of recognized faces in a CSV file. The face recognition algorithm is implemented using the *'face_recognition'* library in Python.
+This program recognizes faces from the live video feed and marks the attendance of recognized faces in a CSV file. The face recognition algorithm is implemented using the *'face_recognition'* library in Python.
 
 ## Requirements
 * Python 3.x
@@ -11,11 +11,11 @@ This program recognizes faces from live video feed and marks attendance of recog
 ## Usage
 1. Store images of people to be recognized in a folder named 'ImagesAttendance'.
 2. Run the program. It opens the webcam and starts recognizing faces.
-3. When a recognized face is detected, the program marks attendance of that person in a CSV file named 'CEO_Attendance.csv'.
+3. When a recognized face is detected, the program marks the attendance of that person in a CSV file named 'CEO_Attendance.csv'.
 
 ## Functionality
 * find_encodings(images): This function takes a list of images as input and returns the facial encodings of each image. It uses the face_recognition library to detect facial features and generate the encodings.
-* mark_attendance(name): This function marks the attendance of the person whose name is passed as input. It reads from and writes to a CSV file named 'CEO_Attendance.csv'. If the person is not already marked present in the CSV file, it appends a new line with the person's name and current timestamp.
+* mark_attendance(name): This function marks the attendance of the person whose face is recognised. It reads from and writes to a CSV file named 'CEO_Attendance.csv'. If the person is not already marked present in the CSV file, it appends a new line with the person's name and current timestamp.
 
 ## How it works
 1. The program reads the images from the 'ImagesAttendance' folder and generates facial encodings for each image using the find_encodings() function.
